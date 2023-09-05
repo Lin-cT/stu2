@@ -31,8 +31,12 @@ title: Student Blog
 
 <section ID="Class"></section>
 <h1 style="text-align: center; color: #324FA3;font-weight:600;font-size:30px">Classes Trimester 1</h1>
-<p>Period 1: AP Calc BC with Mrs. Lanzi</p>
-<p>Period 2: AP Physics with Mr. Liao</p>
-<p>Period 3: AP English Language with Mrs. Darcey</p>
-<p>Period 4: AP Comp Sci P</p>
-<p>Period 5: AP Offrole</p>
+<span style="color: #4263C6;">Period 1: AP Calc BC with Mrs. Lanzi</span>
+<br>
+<span style="color: #4263C6;">Period 2: AP Physics with Mr. Liao</span>
+<br>
+<span style="color: #4263C6;">Period 3: AP English Language with Mrs. Darcey</span>
+<br>
+<span style="color: #4263C6;">Period 4: AP Comp Sci P</span>
+<br>
+<span style="color: #4263C6;">Period 5: AP Offrole</span>
