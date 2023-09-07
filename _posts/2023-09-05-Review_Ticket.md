@@ -12,11 +12,18 @@ courses: { compsci: {week: 3} }
 
 <p>
 - Downloaded tools
+<br>
 - Blog
+<br>
 - Daily Plans review and goals
-- Hacks and Tangibles
-  - Linux Interraction: Bash Script
-  - Python Interaction: Quiz
-  - Java Script Interraction: 
-  - Web Interraction: Clicks Per Second Speed Test
+<br>
+- Hacks and Tangibles:
+<br>
+Linux Interraction- Bash Script
+<br>
+Python Interaction- Quiz
+<br>
+Java Script Interraction-
+<br>
+Web Interraction- Clicks Per Second Speed Test
 </p>
