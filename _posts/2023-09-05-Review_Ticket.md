@@ -17,5 +17,6 @@ courses: { compsci: {week: 3} }
 - Hacks and Tangibles
   - Linux Interraction: Bash Script
   - Python Interaction: Quiz
+  - Java Script Interraction: 
   - Web Interraction: Clicks Per Second Speed Test
 </p>
