@@ -7,6 +7,7 @@ description: Grab of the game Snake.
 type: tangibles
 courses: { compsci: {week: 2} }
 ---
+
 <style>
 
     body{
@@ -74,18 +75,18 @@ courses: { compsci: {week: 2} }
 
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <p class="fs-4">Snake score: <span id="score_value">0</span></p>
+        <p class="fs-4">Snake Score: <span id="score_value">0</span></p>
     </header>
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #052f7d ;font-weight:700">space</span> to begin</p>
+            <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #00008B">space</span> to begin</p>
             <a id="new_game" class="link-alert">New Game</a>
             <a id="setting_menu" class="link-alert">Settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over, press <span style="background-color: #FFFFFF; color: #052f7d ;font-weight:700">space</span> to try again</p>
+            <p>Game Over, press <span style="background-color: #FFFFFF; color: #00008B">space</span> to try again</p>
             <a id="new_game1" class="link-alert">New Game</a>
             <a id="setting_menu1" class="link-alert">Settings</a>
         </div>
@@ -93,8 +94,8 @@ courses: { compsci: {week: 2} }
         <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
         <!-- Settings Screen -->
         <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span style="background-color: #FFFFFF; color: #000000">space</span> to go back to playing</p>
-            <a id="new_game2" class="link-alert">new game</a>
+            <p>Settings Screen, press <span style="background-color: #FFFFFF; color: #00008B">space</span> to go back to playing</p>
+            <a id="new_game2" class="link-alert">New Game</a>
             <br>
             <p>Speed:
                 <input id="speed1" type="radio" name="speed" value="120" checked/>
@@ -367,8 +368,7 @@ courses: { compsci: {week: 2} }
         let setWall = function(wall_value){
             wall = wall_value;
             if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
+            if(wall === 1){screen_snake.style.borderColor = "#00008B";}
         }
     })();
 </script>
-
