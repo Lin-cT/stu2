@@ -23,7 +23,7 @@ Linux Interraction- Bash Script
 <br>
 Python Interaction- Quiz
 <br>
-Java Script Interraction-
+Java Script Interraction- 
 <br>
 Web Interraction- Clicks Per Second Speed Test
 </p>
