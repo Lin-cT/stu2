@@ -11,6 +11,7 @@ courses: { compsci: {week: 3} }
 <h1 style="text-align: center; color:#4263C6;font-weight:700; font-size:40px">Reflection of My Week 3</h1>
 
 <table>
+
   <tr>
     <th>Day</th>
     <th>What I Did</th>
