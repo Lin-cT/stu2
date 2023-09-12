@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Clicks Per Second Speed Test
 description: This is a CPS tester. 
-type: hacks
+type: tangibles
 courses: { compsci: {week: 3} }
 ---
 
