@@ -5,7 +5,7 @@ layout: post
 title: Week 3 Reflection
 description: Reflection of week 3 of coding.
 type: plans
-courses: { compsci: {week: 2} }
+courses: { compsci: {week: 3} }
 ---
 
 <h1 style="text-align: center; color:#4263C6;font-weight:700; font-size:40px">Reflection of My Week 3</h1>
