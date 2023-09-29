@@ -23,6 +23,11 @@ title: Student Blog
 <p><img src="images/Me.jpg" height="300" width="250" align="left" hspace="50"></p>
 <span style="color: #4263C6;">
     To the left is a drawing of some things I love. At the very top left, there is a paintbrush with red paint on it. I really like art, and I love to draw and paint both on paper and digitally. To the right of that, there is a badminton raquet because I have recently picked up the sport. My friend invited me to a badminton Discord server that was hosting weekly meet ups to play badminton, so I started getting into it. Below the paintbrush is a drawing of water or waves. I really love the ocean, I think it's so peaceful and calming. I love to listen to the waves while I reflect about life. Below the waves is a Chinese flag, a symbol for my ethnicity. My mom and dad are both from mainland China so I am 100% Chinese. To the right of the flag is a drawing of my cat, Maomao. I love Maomao, as he has always been by my side and comforting me through the hard times. He also loves to snuggle with me in bed and I think that is the cutest thing. At the very bottom of the picture is a drawing of my two siblings. I have two older siblings, Jennifer and Alan.</span>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 <section ID="Family"></section>
 <h1 style="text-align: center; color: #324FA3;font-weight:600;font-size:30px">My Family</h1>
