@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <title>Binary Game</title>
+    <style>
+        .binary-button {
+            display: inline-block;
+            margin: 5px;
+            display: none;
+        }
+        #check {
+            display: none;
+        }
+    </style>
+</head>
+    <h1>Binary Game</h1>
+    <p id="directions">Click start to begin!</p>
+    <p id="randomNumber">Number: 50</p>
+    <button id="start" onclick="start()">Start!</button>
+    <div id="binary-buttons">
+    <button class="binary-button" id="b5" onclick="c5()">0</button>
+    <button class="binary-button" id="b4" onclick="c4()">0</button>
+    <button class="binary-button" id="b3" onclick="c3()">0</button>
+    <button class="binary-button" id="b2" onclick="c2()">0</button>
+    <button class="binary-button" id="b1" onclick="c1()">0</button>
+    <button class="binary-button" id="b0" onclick="c0()">0</button>
+    </div>
+    <br>
+    <br>
+    <button id="check" onclick="check()">Check!</button>
+    <p id="para"></p>
+</body>
+<script>
+
+    function start() {
+            var start = document.getElementById("start");
+            var button0 = document.getElementById("b0")
+            var button1 = document.getElementById("b1")
+            var button2 = document.getElementById("b2")
+            var button3 = document.getElementById("b3")
+            var button4 = document.getElementById("b4")
+            var button5 = document.getElementById("b5")
+            var text = document.getElementById("directions")
+            var check = document.getElementById("check")
+                start.style.display = "none"; // Hide the button
+                button0.style.display = "block"; //Make the other buttons visible
+                button1.style.display = "block";
+                button2.style.display = "block";
+                button3.style.display = "block";
+                button4.style.display = "block";
+                button5.style.display = "block";
+                check.style.display = "bloack";
+                text.innerHTML = "Click the boxes to match the number in binary!";
+    }
+
+
+
+
+    // Define a common function for changing button text and style
+    function changeText(buttonId, originalText) {
+        var button = document.getElementById(buttonId);
+        if (button.innerHTML === originalText) {
+            button.innerHTML = "1";
+        } else {
+            button.innerHTML = originalText;
+        }
+    }
+
+    function c5() {
+        changeText("b5", "0");
+    }
+
+    function c4() {
+        changeText("b4", "0");
+    }
+
+    function c3() {
+        changeText("b3", "0");
+    }
+
+    function c2() {
+        changeText("b2", "0");
+    }
+
+    function c1() {
+        changeText("b1", "0");
+    }
+
+    function c0() {
+        changeText("b0", "0");
+    }
+
+    function check() {
+        var value = 0;
+
+        if (document.getElementById("b5").innerHTML === "1") {
+            value += 32;
+        }
+
+        if (document.getElementById("b4").innerHTML === "1") {
+            value += 16;
+        }
+
+        if (document.getElementById("b3").innerHTML === "1") {
+            value += 8;
+        }
+
+        if (document.getElementById("b2").innerHTML === "1") {
+            value += 4;
+        }
+
+        if (document.getElementById("b1").innerHTML === "1") {
+            value += 2;
+        }
+
+        if (document.getElementById("b0").innerHTML === "1") {
+            value += 1;
+        }
+
+        if (value === 50) {
+            document.getElementById("para").innerHTML = "Correct!";
+        } else {
+            document.getElementById("para").innerHTML = "Incorrect! Try again.";
+            document.getElementById("b0").innerHTML = "0"
+            document.getElementById("b1").innerHTML = "0"
+            document.getElementById("b2").innerHTML = "0"
+            document.getElementById("b3").innerHTML = "0"
+            document.getElementById("b4").innerHTML = "0"
+            document.getElementById("b5").innerHTML = "0"
+        }
+    }
+</script>
+</html>
