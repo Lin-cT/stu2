@@ -221,45 +221,56 @@ This is an example of a broadcast. In a broadcast, the message is addressed to a
 #### Models
 1. Three of the four following protocols are on the same layer. Identify which ones and what layer they are on, and why they are on each layer:
     - ASCII (see above for information)
-      - Presentation Layer
+      - Application: ASCII is concerned with how data is presented and understood by humans, making it more related to the application layer where user interaction and resource sharing occur.
     - FTP (facilitates transfer of files over the internet)
-      - Application
+      - Application: FTP is designed to facilitate the transfer of files over a network. It involves user authentication, file management, and directory listing, which are application-level functions.
     - TLS (see HTTPS section)
-      - Transport
+      - Application: TLS is used to secure communication between applications. It operates above the transport layer protocols (such as TCP) and below the application layer protocols (such as HTTP or SMTP). This positioning allows TLS to provide security services to the protocols at the application layer.
     - USB (permits data exchange between electronics)
-      - Transport
-
-
+      - Physical: USB permits data exchange at the physical level by providing a standard interface for connecting and transferring data between electronic devices.
 
 2. Telnet is a internet protocol which allows remote access to other computers over a local network or the internet. What layer of the OSI model would this protocol be located on? What is the function of this layer?
+- Telnet belongs to the application layer. Telnet is a protocol used for remote terminal access. It allows a user on one computer to log into another computer on the same network or the internet and execute commands as if they were directly connected to the remote machine. 
+
+- The application layer, layer 7, serves as a crucial interface between the network and end-user applications. Its primary function is to provide network services directly to applications, enabling seamless communication between software running on different devices. This layer defines communication protocols and standards specific to various applications, facilitating data exchange, format representation, and encryption if necessary. 
 
 #### DNS
 
 1. Bob wants to use the domain bob.is.the.best.com. What domain should he buy from a DNS provider (assume it is available)? What would be the subdomains?
+- Bob needs to puchase the domain "best.com". The subdomains would be "bob.is.the".
 
 #### HTTP and HTTPS
 1. What is a difference between HTTP and HTTPS? 
 <br>
  - What protocol does HTTPS use that HTTP doesn't?
+     - HTTP does not provide any encryption, while HTTPS adds a layer of ecurity using SSL/TLS encryption.
 
-2. Last trimester we sent HTTP requests for our passion projects
+1. Last trimester we sent HTTP requests for our passion projects
 <br>
  - Did we use HTTP or HTTPS?
+     - We used HTTP requests
  - What are the benefits and disadvantages of this?
+     - HTTP is a simpler protocol compared to HTTPS, therefore data transfers faster and can be useful when encryption and security are not necessary (like our passion project). HTTP is also universally supported and very compatible. The disadvantages are that is lacks encryption and there is no data integrity, meaning the data could have been tampered with during transmission. 
 
 #### TCP and UDP
 
 1. Bob is setting up a video streaming service, and he needs the stream to be real time. 
 <br>
  - What protocol should he use, TCP or UDP? Why?
+     - He should use UDP because it has less delay as it doesn't need to establish a connection and does not have error recovery mechanisms that may introduce delays to the stream.
  - What are some cons of this protocol? Give an example of a potential issue.
+     - One con to using UDP is the potential packet loss that can happen. Since there is no error recovery in UDP, if a packet is lost during transmission it wont be retransmitted. This can result in video glitches. 
 
 
-2. TCP has error checking, which ensures that all packets arrive properly. Why is this important?
+1. TCP has error checking, which ensures that all packets arrive properly. Why is this important?
 <br>
  - Give an example of how TCP ensures that there are no errors.
+     - It is important to ensure that all packets arrive properly because many types of applications rely on accurate and complete data transmission. Applications that demand reliable data delivery, such as file transfers, email communication, and web browsing, rely on TCP to ensure that all data reaches the destination accurately and in the correct order. One example of error checking that TCP does is assigning sequence numbers to each TCP segment. The sender assigns sequence numbers to the segments to indicate the order in which they were sent. Then, the receiver sends acknowledgment numbers back to the sender to confirm the successful receipt of segments. If the sender does not receive an acknowledgment for a particular segment, it assumes that the segment was not received and retransmits it.
 
-3. Server A computer is communicating with Server B. They have already initiated communication and Server A is now attempting to send data to Server B.
+1. Server A computer is communicating with Server B. They have already initiated communication and Server A is now attempting to send data to Server B.
 <br>
  - How does Server B ensure that they have received any sent packets before Server A continues sending packets in TCP? In UDP?
+     - In TCP, after the packets are sent to Server B, Server B will send an ACK Server A waits for this acknowledgment before sending the next packet. If an acknowledgment is not received within a certain timeout period, Server A assumes that the packet was lost or not delivered successfully, and it retransmits the packet.
+     - In UDP, Server A does not wait for any acknowledgement that the packets were recieved. It will just continue sending packets and expect that Server B has recieved them. 
  - What is another use of this?
+     - Another use of the acknowledgment mechanism in TCP is to support flow control. Flow control helps prevent a fast sender (Server A) from overwhelming a slower receiver (Server B) by ensuring that the receiver can handle the incoming data at its own pace. 
