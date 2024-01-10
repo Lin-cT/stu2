@@ -2,7 +2,7 @@
 toc: true
 comments: false
 layout: post
-title: Student Teach - Legal and Ethical Concerns of Technology 
+title: (Class 7) Student Teach - Legal and Ethical Concerns of Technology 
 description: A lesson on the legal and ethical concerns of technology! By Aditi, Eshika, Cindy, Avanthika, Nupur 
 type: ccc
 courses: { csp: {week: 17} }

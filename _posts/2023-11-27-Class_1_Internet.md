@@ -2,7 +2,7 @@
 toc: true
 comments: false
 layout: post
-title: 4.1 - The Internet
+title: (Class 1) 4.1 - The Internet
 description: Internet and basic protocols
 type: tangibles
 courses: { compsci: {week: 2} }
