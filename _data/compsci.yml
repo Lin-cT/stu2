@@ -14,3 +14,18 @@ Unit3:
   description: Start working in groups to complete a passion project
   start: 8
   end: 11
+Unit3:
+  title: Team Projects (Tri 1)
+  description: Start working in groups to complete a passion project
+  start: 8
+  end: 11
+Unit4:
+  title: CPT Project (Tri 2)
+  description: New teams and working on binary project.
+  start: 12
+  end: 17
+Unit5:
+  title: N@tM (Tri 2)
+  description: Preparing for the main project.
+  start: 18
+  end: 23
