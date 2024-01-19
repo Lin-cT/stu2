@@ -4,8 +4,8 @@ comments: false
 layout: post
 title: (Class 1) 4.1 - The Internet
 description: Internet and basic protocols
-type: tangibles
-courses: { compsci: {week: 2} }
+type: plans
+courses: { compsci: {week: 14} }
 ---
 
 ## 4.1 The Internet
